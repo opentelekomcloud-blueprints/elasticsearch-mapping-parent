@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.alien4cloud</groupId>
     <artifactId>elasticsearch-mapping-parent</artifactId>
-    <version>6.8.22-1-SNAPSHOT</version>
+    <version>6.8.22-2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Elastic search mapping parent</name>
@@ -14,18 +14,19 @@
         <search-guard.version>6.8.6-25.7</search-guard.version>
 
         <jackson.version>2.9.3</jackson.version>
-        <spring.version>4.3.2.RELEASE</spring.version>
+        <spring.version>6.0.14</spring.version>
     	<commons-lang.version>3.5</commons-lang.version>
     	<commons-beanutils.version>1.9.3</commons-beanutils.version>
         <junit.version>4.12</junit.version>
         <guava.version>19.0</guava.version>
-        <lombok.version>1.18.16</lombok.version>
+        <lombok.version>1.18.30</lombok.version>
         <!-- Logging -->
         <log4j.version>2.17.0</log4j.version>
         <slf4j.version>1.7.24</slf4j.version>
 
-        <java.version>15</java.version>
+        <java.version>17</java.version>
         <javax.annotation.version>1.3.2</javax.annotation.version>
+        <jakarta.annotation.version>2.1.1</jakarta.annotation.version>
 
         <maven.compiler.version>3.8.1</maven.compiler.version>
     </properties>
@@ -136,9 +137,9 @@
       </dependency>
 
       <dependency>
-        <groupId>javax.annotation</groupId>
-        <artifactId>javax.annotation-api</artifactId>
-        <version>${javax.annotation.version}</version>
+          <groupId>jakarta.annotation</groupId>
+          <artifactId>jakarta.annotation-api</artifactId>
+        <version>${jakarta.annotation.version}</version>
       </dependency>
 
 
