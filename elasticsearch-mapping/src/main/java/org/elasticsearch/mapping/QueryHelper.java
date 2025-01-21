@@ -3,10 +3,8 @@ package org.elasticsearch.mapping;
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.function.Supplier;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import org.apache.lucene.search.join.ScoreMode;
 //import org.elasticsearch.action.count.CountRequestBuilder;
