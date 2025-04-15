@@ -12,7 +12,6 @@ import org.elasticsearch.annotation.TypeName;
 import com.google.common.collect.Maps;
 import org.apache.commons.lang3.ArrayUtils;
 import org.elasticsearch.util.AnnotationScanner;
-import org.elasticsearch.util.MapUtil;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -49,6 +48,21 @@ public class MappingBuilder {
      */
     public static String indexTypeFromClass(Class<?> clazz) {
         return clazz.getSimpleName().toLowerCase();
+    }
+
+    /**
+     * Helper to return a valid index type from a class. Same as {@link #indexTypeFromClass(Class)}
+     * but first checks for the {@link TypeName} annotation on class (type) level. If it is present its
+     * value will be used as index type delegating to {@link #indexTypeFromClass(Class)} otherwise.
+     * @param clazz clazz The class for which to get an index type.
+     * @return The index type.
+     */
+    public static String indexType(Class<?> clazz) {
+        TypeName annotation = clazz.getAnnotation(TypeName.class);
+        if (annotation != null) {
+            return annotation.typeName().toLowerCase();
+        }
+        return indexTypeFromClass(clazz);
     }
 
     /**
