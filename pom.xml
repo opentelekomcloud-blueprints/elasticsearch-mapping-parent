@@ -16,7 +16,7 @@
         <jackson.version>2.9.3</jackson.version>
         <spring.version>6.1.21</spring.version>
         <commons-lang.version>3.5</commons-lang.version>
-        <commons-beanutils.version>1.9.3</commons-beanutils.version>
+        <commons-beanutils.version>1.11.0</commons-beanutils.version>
         <junit.version>4.12</junit.version>
         <guava.version>19.0</guava.version>
         <lombok.version>1.18.30</lombok.version>
