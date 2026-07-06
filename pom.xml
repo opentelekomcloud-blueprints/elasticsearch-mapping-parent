@@ -14,7 +14,7 @@
         <search-guard.version>6.8.6-25.7</search-guard.version>
 
         <jackson.version>2.9.3</jackson.version>
-        <spring.version>6.1.21</spring.version>
+        <spring.version>6.2.15</spring.version>
         <commons-lang.version>3.5</commons-lang.version>
         <commons-beanutils.version>1.11.0</commons-beanutils.version>
         <junit.version>4.12</junit.version>
